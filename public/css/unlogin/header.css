@@ -1,0 +1,191 @@
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header {
+  background-color: #f8ba16;
+  border-bottom: 1px solid #181212;
+}
+
+.get-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    margin-top: 0;
+    border-radius: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+.logo {
+    float: left;
+    font-size: 30px;
+}
+
+.logo img {
+    margin-bottom: -10px;
+}
+a {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+}
+
+ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+@media screen and (max-width: 640px) {
+
+  @keyframes active-menu-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+  .logo {
+    float: left;
+}
+
+.logo img {
+    margin-bottom: -1.563vw;
+    width: 6.25vw;
+    height: 6.094vw;
+}
+  header{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+  }
+  .get-button {
+    padding: 1.25vw;
+    margin-top: 0;
+    border-radius: 3.125vw;
+}
+  .header-content {
+    padding: 0.781vw 0;
+}
+
+  .menu {
+    display: block;
+
+    padding: 1.563vw 1.563vw  3.125vw;
+  }
+
+  .logo {
+    float: left;
+    font-size: 4.688vw;
+}
+
+  /**レスポンシブにした時のナビの見せ方**/
+  header nav {
+    position: fixed;
+    top: -78.125vw;
+    right: 0vw;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    padding-top: 9.375vw;
+    border-radius: 1.563vw;
+    box-shadow: 0 1.25vw 2.813vw 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+  }
+
+  header nav ul li {
+    width: 100%;
+  background-color: rgb(175 175 175 / 84%);
+  margin-bottom: 0.781vw;
+  border-radius: 1.563vw;
+  }
+
+  header nav ul li a {
+    color: #ffffff;
+    padding: 1.094vw;
+    margin-bottom: 1.563vw;
+    text-align: center;
+
+  }
+
+  .btn-gnavi,
+  .btn-gnavi span {
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all .4s;
+  }
+
+  header .btn-gnavi {
+    position: fixed;
+    top: 3.125vw;
+    right: 3.125vw;
+    z-index: 3;
+    width: 4.688vw;
+    height: 3.75vw;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    appearance: none;
+  }
+
+  header .btn-gnavi span {
+
+    position: absolute;
+    left: 0;
+    width: 4.688vw;
+    height: 0.625vw;
+    background: #666;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    border-radius: 1.563vw;
+  }
+
+  header .btn-gnavi span:nth-child(1) {
+    top: 0vw;
+
+  }
+
+  header .btn-gnavi span:nth-child(2) {
+    top: 1.563vw;
+  }
+
+  header .btn-gnavi span:nth-child(3) {
+
+    bottom: 0;
+  }
+  .btn-gnavi.hb-open {
+
+  margin-top: 2.344vw;
+  }
+  .btn-gnavi.hb-open span {
+    background-color: #040000;
+
+  }
+
+  .btn-gnavi.hb-open span:nth-of-type(1) {
+    transform: rotate(-45deg);
+  }
+
+  .btn-gnavi.hb-open span:nth-of-type(2) {
+    animation: active-menu-bar02 .4s forwards;
+  }
+
+  .btn-gnavi.hb-open span:nth-of-type(3) {
+    transform: translateY(-3.125vw) rotate(45deg);
+
+  }
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Sofia+Sans+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.contianer
+{
+    width: 1000px;
+    margin: 0 aut0;
+}
+.error-message{
+    display: inline-block;
+    color: #ff0000;
+    font-size: 16px;
+    margin: 5px  0;
+}
+.login-whole{
+margin: 80px;
+border: 2px solid #cbcbcb;
+border-radius: 20px;
+padding: 30px;
+}
+.login-whole h2{
+font-size: 25px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+.input-group{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.left-form{
+margin-right: 20px;
+width: 100%;
+}
+.right-form{
+    width: 100%;
+}
+label{
+font-size: 20px;
+display: inline-block;
+margin-bottom: 10px;
+color: #675858;
+}
+::placeholder {
+    font-size: 13px;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-color: rgb(124, 124, 124);
+    border-radius: 5px;
+}
+.bio-input{
+    margin-bottom: 10px;
+}
+.signUp{
+padding:8px 15px;
+border: none;
+border-radius: 10px;
+color: #fff;
+background-color: #6b6b6b;
+}
+
+@media screen  and (max-width:768px){
+
+
+.contianer
+{
+    width: auto;
+    padding: 5.208vw;
+}
+.login-whole{
+margin: 9.115vw;
+border: 0.26vw solid #cbcbcb;
+border-radius: 2.344vw;
+padding: 3.646vw;
+}
+.login-whole h2{
+font-size: 2.995vw;
+margin-bottom: 2.344vw;
+}
+
+.form-group{
+    margin-bottom: 1.042vw;
+}
+.left-form{
+margin-right: 2.344vw;
+width: 100%;
+}
+.right-form{
+    width: 100%;
+}
+label{
+font-size: 2.344vw;
+margin-bottom: 1.042vw;
+}
+::placeholder {
+    font-size: 1.302vw;
+}
+input{
+    width: 100%;
+    padding: 0.651vw;
+    border-radius: 0.391vw;
+}
+
+.bio-input{
+    margin-bottom: 1.042vw;
+}
+.signUp{
+padding:0.781vw 1.563vw;
+border-radius: 1.042vw;
+}
+}
+
+
+@media screen  and (max-width:640px){
+    .contianer
+    {
+        width: auto;
+        padding: 3.125vw;
+    }
+    .login-whole{
+    margin: 9.375vw;
+     margin-top: 18.75vw;
+    border: 0.313vw solid #cbcbcb;
+    border-radius: 2.5vw;
+    padding: 4.375vw;
+    }
+    .login-whole h2{
+    font-size: 3.313vw;
+    margin-bottom: 2.5vw;
+    }
+
+    .form-group{
+        margin-bottom: 0.938vw;
+    }
+    .left-form{
+    margin-right: 2.5vw;
+    width: 100%;
+    }
+    .right-form{
+        width: 100%;
+    }
+    label{
+    font-size: 2.5vw;
+    margin-bottom: 0.938vw;
+    }
+    ::placeholder {
+        font-size: 1.25vw;
+        margin-top: 0.381vw;
+    }
+    input{
+        width: 100%;
+        padding: 0.625vw;
+        height: 4vw;
+        border-radius: 0.469vw;
+    }
+    .error-message{
+        font-size: 2.5vw;
+        margin: 0.781vw  0;
+    }
+    .bio-input{
+        margin-bottom: 0.938vw;
+    }
+    .signUp{
+    padding:0.625vw 1.563vw;
+    font-size: 2.344vw;
+    border-radius: 0.938vw;
+    }
+    }
